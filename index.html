@@ -195,42 +195,56 @@
     </style>
 
     <section id="home-section" class="hero">
-      <div class="home-slider owl-carousel">
-        <div class="slider-item d-flex align-items-center">
-          <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-md-6 d-flex justify-content-center">
-                <img src="images/mine.png" alt="Anand's Image" class="hero-image img-fluid">
-              </div>
-              <div class="col-md-6 text-center text-md-left">
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm Anand</h1>
-                  <h2 class="mb-4">Interior Designer</h2>
-                  <p><a href="#projects-section" class="btn btn-pink btn-outline-pink py-3 px-4">skills</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <style>
+  /* Use !important to override other styles if necessary */
+  .hero-image {
+    max-width: 50% !important; /* Adjust this percentage as needed */
+    height: auto !important; /* Maintains aspect ratio */
+  }
+  
+  /* Alternatively, target the image more specifically */
+  .slider-item .col-md-6 img.hero-image {
+    max-width: 50% !important;
+    height: auto !important;
+  }
+</style>
+
+<div class="home-slider owl-carousel">
+  <div class="slider-item d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="images/half.png" alt="Anand's Image" class="hero-image img-fluid">
         </div>
-        <div class="slider-item d-flex align-items-center">
-          <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-md-6 d-flex justify-content-center">
-                <img src="images/half.png" alt="Anand's Image" class="hero-image img-fluid">
-              </div>
-              <div class="col-md-6 text-center text-md-left">
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm a 3D VISUALIZER</h1>
-                  <h2 class="mb-4">Based in India</h2>
-                  <p><a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My Works</a></p>
-                </div>
-              </div>
-            </div>
+        <div class="col-md-6 text-center text-md-left">
+          <div class="text">
+            <span class="subheading">Hello!</span>
+            <h1 class="mb-4 mt-3">I'm Anand</h1>
+            <h2 class="mb-4">Interior Designer</h2>
+            <p><a href="#projects-section" class="btn btn-pink btn-outline-pink py-3 px-4">skills</a></p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="slider-item d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="images/half.png" alt="Anand's Image" class="hero-image img-fluid">
+        </div>
+        <div class="col-md-6 text-center text-md-left">
+          <div class="text">
+            <span class="subheading">Hello!</span>
+            <h1 class="mb-4 mt-3">I'm a 3D VISUALIZER</h1>
+            <h2 class="mb-4">Based in India</h2>
+            <p><a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My Works</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 
     <style>
