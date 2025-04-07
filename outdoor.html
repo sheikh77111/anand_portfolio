@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Clark - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container-fluid px-0"> <!-- Changed to container-fluid and removed padding -->
+        <a class="navbar-brand" href="index.html">Anand</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="index.html#services-section" class="nav-link"><span>Services</span></a></li>
+            <li class="nav-item"><a href="index.html#skills-section" class="nav-link"><span>Skills</span></a></li>
+            <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+        <button id="toggleBtn" class="toggle-mode-btn ml-2">
+          <i id="toggleIcon" class="bi bi-moon-stars-fill"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <style>
+      /* Navbar Adjustments */
+      #ftco-navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #000 !important; /* Default dark mode */
+      }
+      .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Pushes items to edges */
+        width: 100%;
+      }
+      .navbar-brand {
+        color: #F08080 !important;
+        margin-left: 15px; /* Small padding from edge */
+        position: relative;
+        left: 0;
+        font-size: 1.5rem; /* Optional: adjust size if needed */
+      }
+      .navbar-brand:hover {
+        color: #FF6F61 !important;
+      }
+      .navbar-collapse {
+        flex-grow: 0; /* Prevents nav links from stretching too wide */
+      }
+      .navbar-nav {
+        display: flex;
+        align-items: center;
+      }
+      .navbar-toggler {
+        margin-right: 15px; /* Space from toggle button */
+      }
+    
+      /* Toggle Button Styles */
+      .toggle-mode-btn {
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 6px 12px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        overflow: hidden;
+        margin-right: 15px; /* Space from right edge */
+      }
+      .light-mode .toggle-mode-btn {
+        border-color: #000;
+        color: #000;
+      }
+      .toggle-mode-btn:hover {
+        background: #fff;
+        color: #000;
+        transform: scale(1.1);
+      }
+      .light-mode .toggle-mode-btn:hover {
+        background: #000;
+        color: #fff;
+      }
+      .toggle-mode-btn::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transform: scale(0);
+        animation: ripple 0.6s linear;
+        pointer-events: none;
+      }
+      @keyframes ripple {
+        to {
+          transform: scale(4);
+          opacity: 0;
+        }
+      }
+    
+      /* Theme Styles */
+      .light-mode {
+        background-color: #efefef !important;
+      }
+      .light-mode #ftco-navbar {
+        background-color: #ffffff !important; /* Light mode navbar */
+      }
+      .light-mode .navbar-nav .nav-link {
+        color: #000000 !important;
+      }
+      .light-mode .text h1,
+      .light-mode .text span,
+      .light-mode .btn-outline-white {
+        color: #000000 !important;
+        border-color: #333 !important;
+      }
+      .light-mode .text h2 {
+        color: #F08080 !important;
+      }
+      .dark-mode {
+        background-color: #000 !important;
+      }
+      .dark-mode #ftco-navbar {
+        background-color: #000000 !important; /* Dark mode navbar */
+      }
+      .dark-mode .navbar-nav .nav-link {
+        color: #ffffff !important;
+      }
+      .dark-mode .text h1,
+      .dark-mode .text span,
+      .dark-mode .btn-outline-white {
+        color: #ffffff !important;
+      }
+      .dark-mode .text h2 {
+        color: #F08080 !important;
+      }
+      .light-mode h2 {
+        color: #F08080 !important;
+      }
+      .dark-mode h2 {
+        color: #F08080 !important;
+      }
+      .light-mode .btn-outline-white {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border-color: #d80000 !important;
+      }
+      .light-mode .btn-outline-white:hover {
+        background: #ffffff !important;
+        color: #000000 !important;
+        border-color: #000000 !important;
+      }
+      .dark-mode .btn-outline-white:hover {
+        background: #000000 !important;
+        color: #ffffff !important;
+      }
+      .light-mode .navbar-nav .nav-link:hover {
+        color: #666666 !important;
+      }
+      body {
+        padding-top: 70px; /* Space for fixed navbar */
+      }
+      #toggleBtn {
+        position: static; /* Changed from fixed to flow with layout */
+      }
+    </style>
+<section class="ftco-section ftco-project" id="projects-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">My Projects</h2>
+        <p>Some of the major projects that I have created</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- 3D Architectural Visualization -->
+      <div class="col-md-6">
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center" 
+             style="background-image: url(images/ananad9.jpg);" 
+             data-toggle="modal" data-target="#imageModal" data-img="images/ananad9.jpg">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="#">3D Architectural Visualization</a></h3>
+            <span>Interior</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Architectural Visualization & Bringing Designs to Life -->
+      <div class="col-md-6">
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center" 
+             style="background-image: url(images/ANAND2.jpg);" 
+             data-toggle="modal" data-target="#imageModal" data-img="images/ANAND2.jpg">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="#">3D Architectural Visualization & Bringing Designs to Life</a></h3>
+            <span>Buildings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Exterior Visualization -->
+      <div class="col-md-6">
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center" 
+             style="background-image: url(images/ANAND3.jpg);" 
+             data-toggle="modal" data-target="#imageModal" data-img="images/ANAND3.jpg">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="#">Exterior Visualization</a></h3>
+            <span>Buildings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Floor Plans & Space Planning -->
+      <div class="col-md-6">
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center" 
+             style="background-image: url(images/ANAND5.jpg);" 
+             data-toggle="modal" data-target="#imageModal" data-img="images/ANAND4.jpg">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="#">3D Floor Plans & Space Planning</a></h3>
+            <span>Interior</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Modal for Image Pop-up -->
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img id="modalImage" src="" class="img-fluid" alt="Project Image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript to set modal image to the clicked project's background image
+    document.querySelectorAll('.project').forEach(function (project) {
+      project.addEventListener('click', function () {
+        // Get the background-image style from the clicked project
+        var bgImage = window.getComputedStyle(project).getPropertyValue('background-image');
+        // Extract the URL from the background-image (remove 'url(' and ')')
+        var imgSrc = bgImage.slice(5, -2); // Removes 'url("' and '")'
+        // Set the modal image src to the background image
+        document.getElementById('modalImage').src = imgSrc;
+      });
+    });
+  </script>
+  
+  <style>
+   /* Project Section */
+.ftco-project {
+  background: #000;
+  padding: 80px 0;
+  color: white;
+}
+
+/* Project Boxes */
+.project {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay Effect */
+.project .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.project:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Project Text */
+.project .text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Links Styling */
+.project a {
+  color: white;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+     <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ftco-footer-widget mb-4 text-center">
+              <h2 class="ftco-heading-2">Follow Me</h2>
+              <ul class="ftco-footer-social list-unstyled d-flex justify-content-center">
+                <li class="ftco-animate mx-3">
+                  <a href="https://twitter.com/" target="_blank">
+                    <span class="icon-twitter"></span>
+                  </a>
+                </li>
+                <li class="ftco-animate mx-3">
+                  <a href="https://facebook.com" target="_blank">
+                    <span class="icon-facebook"></span>
+                  </a>
+                </li>
+                <li class="ftco-animate mx-3">
+                  <a href="https://www.instagram.com/?hl=en" target="_blank">
+                    <span class="icon-instagram"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ftco-footer-widget mb-4 text-center">
+              <h2 class="ftco-heading-2">Contact</h2>
+              <ul class="list-unstyled">
+                <li><span class="icon icon-map-marker"></span> Kattangal, Calicut, Kerala</li>
+                <li><a href="tel:+918156865775"><span class="icon icon-phone"></span> +91 8156865775</a></li>
+                <li><a href="mailto:anand3hd@gmail.com"><span class="icon icon-envelope"></span> anand3hd@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const body = document.body;
+        const toggleBtn = document.getElementById("toggleBtn");
+        const toggleIcon = document.getElementById("toggleIcon");
+
+        const savedMode = localStorage.getItem("mode");
+        if (savedMode === "light") {
+          body.classList.add("light-mode");
+          toggleIcon.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
+        } else {
+          body.classList.add("dark-mode");
+          toggleIcon.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
+        }
+
+        toggleBtn.addEventListener("click", function () {
+          const isLightMode = body.classList.contains("light-mode");
+          
+          if (isLightMode) {
+            body.classList.remove("light-mode");
+            body.classList.add("dark-mode");
+            toggleIcon.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
+            localStorage.setItem("mode", "dark");
+          } else {
+            body.classList.remove("dark-mode");
+            body.classList.add("light-mode");
+            toggleIcon.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
+            localStorage.setItem("mode", "light");
+          }
+
+          toggleBtn.classList.add("ripple");
+          setTimeout(() => toggleBtn.classList.remove("ripple"), 600);
+        });
+      });
+    </script>
+  </body>
+</html>

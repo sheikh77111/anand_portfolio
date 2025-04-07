@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Clark - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container-fluid px-0"> <!-- Changed to container-fluid and removed padding -->
+        <a class="navbar-brand" href="index.html" style="color: #F08080 !important;">Anand</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+            <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+        <button id="toggleBtn" class="toggle-mode-btn ml-2">
+          <i id="toggleIcon" class="bi bi-moon-stars-fill"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <style>
+      /* Add these rules to your existing CSS */
+
+/* Fix for scrolled navbar in light mode */
+.light-mode .scrolled .nav-link span,
+.light-mode .navbar-nav .nav-link span,
+.light-mode .ftco_navbar.scrolled .nav-link span {
+  color: #333333 !important;
+  font-weight: 500;
+}
+
+/* Make sure scrolled class doesn't override our text colors */
+.light-mode .ftco_navbar.scrolled,
+.light-mode .ftco-navbar-light.scrolled {
+  background-color: #ffffff !important;
+}
+
+.dark-mode .ftco_navbar.scrolled,
+.dark-mode .ftco-navbar-light.scrolled {
+  background-color: #000000 !important;
+}
+
+/* Additional rule to target any potential class that might be making text white */
+.light-mode .scrolled .navbar-nav li a span,
+.light-mode .ftco-navbar-light.scrolled .navbar-nav > .nav-item > .nav-link span {
+  color: #333333 !important;
+}
+
+/* Target every possible element in the navbar that might have text */
+.light-mode #ftco-nav a,
+.light-mode #ftco-nav a span,
+.light-mode .ftco-navbar-light .navbar-nav > .nav-item > .nav-link,
+.light-mode .ftco-navbar-light .navbar-nav > .nav-item > .nav-link span {
+  color: #333333 !important;
+}
+
+/* Make hover state more prominent in light mode */
+.light-mode .navbar-nav .nav-link:hover span,
+.light-mode .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover span,
+.light-mode .ftco-navbar-light.scrolled .navbar-nav > .nav-item > .nav-link:hover span {
+  color: #F08080 !important;
+}
+</style>
+
+<div class="home-slider owl-carousel">
+  <div class="slider-item d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="images/mine.png" alt="Anand's Image" class="hero-image img-fluid" style="max-width: 600px; max-height: 500px;">
+        </div>
+        <div class="col-md-6 text-center text-md-left">
+          <div class="text">
+            <span class="subheading">Hello!</span>
+            <h1 class="mb-4 mt-3">I'm Anand</h1>
+            <h2 class="mb-4">Interior Designer</h2>
+            <p><a href="#projects-section" class="btn btn-pink btn-outline-pink py-3 px-4">skills</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider-item d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="images/mine.png" alt="Anand's Image" class="hero-image img-fluid" style="max-width: 600px; max-height: 500px;">
+        </div>
+        <div class="col-md-6 text-center text-md-left">
+          <div class="text">
+            <span class="subheading">Hello!</span>
+            <h1 class="mb-4 mt-3">I'm a 3D VISUALIZER</h1>
+            <h2 class="mb-4">Based in India</h2>
+            <p><a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My Works</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <style>
+      /* Home Section */
+      #home-section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        background: black;
+      }
+      .home-slider {
+        width: 100%;
+        height: 100%;
+      }
+      .slider-item {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+      .hero-image {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+      .btn-white {
+        border: 2px solid white;
+        color: #ffffff;
+        transition: 0.3s;
+      }
+      .btn-white:hover {
+        background: white;
+        color: #000000;
+      }
+      @media (max-width: 768px) {
+        .slider-item {
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+        }
+        .hero-image {
+          width: 90%;
+          max-width: 300px;
+        }
+        #home-section {
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        #about-section {
+          margin-top: -50px;
+          padding-top: 1000px;
+        }
+      }
+      .light-mode #home-section {
+        background-color: #ffffff !important;
+      }
+      .light-mode .btn-white {
+        border: 2px solid black;
+        color: #000000;
+      }
+      .light-mode .btn-white:hover {
+        background: black;
+        color: #ffffff;
+      }
+      .dark-mode #home-section {
+        background-color: #000000 !important;
+      }
+      .dark-mode .btn-white {
+        border: 2px solid white;
+        color: #ffffff;
+      }
+      .dark-mode .btn-white:hover {
+        background: white;
+        color: #000000;
+      }
+    </style>
+<section class="ftco-about img ftco-section ftco-no-pb text-center" id="about-section">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <!-- Overlay div removed as it seemed unused -->
+      <div class="col-md-10 col-lg-8 pb-5 about-content">
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-12 heading-section ftco-animate">
+   
+            <h2 class="mb-4">About Me</h2>
+            <p class="about-text">
+              My name is <strong>Anand</strong>. This is my personal resume where I love to experiment with images and new designs.  
+              I am a <strong>Senior 3D Visualizer</strong> with over <strong>12 years</strong> of experience in <strong>Interior, Exterior, and 2D projects</strong>.  
+              I also specialize in <strong>graphic design</strong> to enhance 3D views and bring concepts to reality with high-quality visuals.
+            </p>
+            <button class="read-more-btn mt-3" id="toggleAboutInfo">Read More</button>
+            <ul class="about-info mt-4 px-md-0 px-2 list-unstyled" id="aboutDetails" style="display: none;">
+            <li><span><strong>Name:</strong></span> Anand</li>
+            <li><span><strong>Address:</strong></span> Kattangal, Calicut, Kerala</li>
+            <li><span><strong>Pin Code:</strong></span> 673601</li>
+            <li><span><strong>Email:</strong></span> <a href="mailto:anand3hd@gmail.com">anand3hd@gmail.com</a></li>
+            <li><span><strong>Phone:</strong></span> <a href="tel:+918156865775">+91 8156865775</a></li>
+            </ul>
+
+          </div>
+        </div>
+     
+        <!-- Counter wrap kept but empty div removed; add content if needed -->
+        <div class="counter-wrap ftco-animate d-flex justify-content-center mt-md-3">
+          <div class="text">
+            <!-- Add counter content here if intended, e.g., years of experience -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .read-more-btn {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+  }
+
+  .read-more-btn:hover {
+    background-color: #dbdbdb;
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(224, 224, 224, 0.3);
+  }
+
+  .read-more-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(113, 113, 113, 0.4);
+  }
+</style>
+
+
+<script>
+  document.getElementById("toggleAboutInfo").addEventListener("click", function () {
+    const list = document.getElementById("aboutDetails");
+    if (list.style.display === "none") {
+      list.style.display = "block";
+      this.textContent = "Show Less";
+    } else {
+      list.style.display = "none";
+      this.textContent = "Read More";
+    }
+  });
+</script>
+
+
+<section class="ftco-section ftco-no-pb" id="resume-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">FEB 2022 - PRESENT</span>
+          <h2>Art & 3D VISUALIZER AND 2D DRAFTSMAN</h2>
+          <span class="position">SKYLIGHT, Mukkam</span>
+          <p class="mt-4">Specializing in detailed 3D visual representations of architectural, interior, and product designs.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">MAR 2020 - FEB 2022</span>
+          <h2>3D VISUALIZER AND 2D DRAFTSMAN</h2>
+          <span class="position">USI DESIGN, Meenchanda, Calicut</span>
+          <p class="mt-4">A firm specializing in 3D visualization and 2D drafting for architectural, interior, and industrial design projects.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">DEC 2018 - JAN 2020</span>
+          <h2>3D VISUALIZER AND 2D DRAFTSMAN</h2>
+          <span class="position">DASC EXHIBITION & INTERIORS, Sharjah, UAE</span>
+          <p class="mt-4">A leading firm specializing in exhibition stand design, interior fit-outs, and 3D visualization.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">AUG 2015 - DEC 2018</span>
+          <h2>3D VISUALIZER AND 2D DRAFTSMAN</h2>
+          <span class="position">MUHZIN ASSOCIATES, Kunnamangalam, Calicut</span>
+          <p class="mt-4">A professional firm specializing in architectural design, 3D visualization, and interior solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">JUN 2014 - MAY 2015</span>
+          <h2>3D VISUALIZER AND 2D DRAFTSMAN</h2>
+          <span class="position">QUAAF DESIGN, Saudi Arabia</span>
+          <p class="mt-4">A premier design firm specializing in architectural visualization, interior design, and 3D rendering.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">SEPT 2010 - FEB 2014</span>
+          <h2>3D VISUALIZER AND 2D DRAFTSMAN</h2>
+          <span class="position">SALEEM GROUP, Mankavu, Calicut</span>
+          <p class="mt-4">A renowned firm specializing in architecture, interior design, 3D visualization, and construction solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">JUNE 2006 - DEC 2007</span>
+          <h2>AURIGA MULTIMEDIA</h2>
+          <span class="position">Digital Art and Audio Visual Engineering, Thalassery, Kerala</span>
+          <p class="mt-4">A leading training institute specializing in multimedia, animation, graphic design, VFX, and 3D visualization.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">JUNE 2002 - DEC 2004</span>
+          <h2>HIGHER SECONDARY SCHOOL</h2>
+          <span class="position">Plus Two Higher Secondary Board, Iritty, Kerala</span>
+          <p class="mt-4">Providing quality higher secondary education, offering a well-structured curriculum under the state board.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">JUNE 2001 - DEC 2002</span>
+          <h2>HIGH SCHOOL</h2>
+          <span class="position">SSLC, State Education Board, Iritty, Kerala</span>
+          <p class="mt-4">An educational institution focusing on academic subjects, skill development, and extracurricular activities.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6 text-center ftco-animate">
+        <p><a href="resume/RESUME  2025.pdf" download="RESUME_2025.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Resume Section Base Styles */
+  #resume-section {
+    background: #000000; /* Default dark mode */
+    color: #ffffff; /* Default dark mode text */
+    padding: 60px 0;
+  }
+  .resume-wrap {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgb(0, 0, 0);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 0.8s ease both;
+  animation: infinite;
+}
+
+/* Hover effect: zoom + lift + shadow */
+.resume-wrap:hover {
+  transform: scale(1.05) translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+/* Slide-up + fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Add animation delay for each block */
+.resume-wrap:nth-child(1) { animation-delay: 0.1s; }
+.resume-wrap:nth-child(2) { animation-delay: 0.2s; }
+.resume-wrap:nth-child(3) { animation-delay: 0.3s; }
+.resume-wrap:nth-child(4) { animation-delay: 0.4s; }
+.resume-wrap:nth-child(5) { animation-delay: 0.5s; }
+.resume-wrap:nth-child(6) { animation-delay: 0.6s; }
+.resume-wrap:nth-child(7) { animation-delay: 0.7s; }
+.resume-wrap:nth-child(8) { animation-delay: 0.8s; }
+.resume-wrap:nth-child(9) { animation-delay: 0.9s; }
+
+  .resume-wrap .date,
+  .resume-wrap .position {
+    font-size: 0.9rem;
+    display: block;
+  }
+  .resume-wrap h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .resume-wrap p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Light Mode */
+  .light-mode #resume-section {
+    background: #ffffff !important; /* Proper white */
+    color: #000000 !important; /* Black text */
+  }
+  .light-mode .resume-wrap {
+    background: #f8f9fa; /* Light gray background for div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  .light-mode .resume-wrap:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  .light-mode .resume-wrap .date,
+  .light-mode .resume-wrap .position {
+    color: #666666; /* Gray for contrast */
+  }
+  .light-mode .resume-wrap h2 {
+    color: #F08080 !important; /* Pink h2 */
+  }
+  .light-mode .resume-wrap p {
+    color: #333333; /* Darker gray for readability */
+  }
+
+  /* Dark Mode */
+  .dark-mode #resume-section {
+    background: #000000 !important; /* Black background */
+    color: #ffffff !important; /* White text */
+  }
+  .dark-mode .resume-wrap {
+    background: #1a1a1a; /* Dark gray background for div */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05); /* Subtle shadow */
+  }
+  .dark-mode .resume-wrap:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+  }
+  .dark-mode .resume-wrap .date,
+  .dark-mode .resume-wrap .position {
+    color: #cccccc; /* Light gray for contrast */
+  }
+  .dark-mode .resume-wrap h2 {
+    color: #F08080 !important; /* Pink h2 */
+  }
+  .dark-mode .resume-wrap p {
+    color: #ffffff; /* White text */
+  }
+</style>
+
+<section class="ftco-section" id="services-section">
+  <div class="container">
+    <div class="row justify-content-center py-5 mt-5">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Services</h1>
+        <h2 class="mb-4">Services</h2>
+        <p>I am a skilled 3D visualizer in architecture, specializing in transforming ideas into stunning visual representations. With expertise in 3D modeling, rendering, and animation, I create realistic architectural visuals that bring designs to life.</p>
+      </div>
+    </div>
+    <div class="row">
+
+      <!-- Service Box 1 -->
+      <div class="col-md-4 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <span class="icon"><i class="flaticon-analysis"></i></span>
+          <div class="desc">
+            <h3 class="mb-3">3D VISUALIZER</h3>
+            <div class="read-more">
+              I bring your designs to life with realistic architectural visuals and creative rendering.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Box 2 -->
+      <div class="col-md-4 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <span class="icon"><i class="flaticon-flasks"></i></span>
+          <div class="desc">
+            <h3 class="mb-3">DRAFTSMAN</h3>
+            <div class="read-more">
+              Precision in technical drawings and plans to bring architectural ideas into clear form.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Box 3 -->
+      <div class="col-md-4 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <span class="icon"><i class="flaticon-ideas"></i></span>
+          <div class="desc">
+            <h3 class="mb-3">GRAPHIC DESIGNER</h3>
+
+            <div class="read-more">
+              Creative visual storytelling through stunning designs, branding, and digital artwork.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- You can repeat for other boxes the same way -->
+
+    </div>
+  </div>
+</section>
+
+
+<section class="ftco-section" id="skills-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Skills</h1>
+        <h2 class="mb-4">My Skills</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="skill">
+          <h3>Photoshop <span class="percent">90%</span></h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Illustrator <span class="percent">75%</span></h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>AutoCAD <span class="percent">95%</span></h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>3DS MAX & VRAY <span class="percent">90%</span></h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Lumion <span class="percent">40%</span></h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="40%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Flash <span class="percent">45%</span></h3>
+          <div class="skill-bar"><div class="skill-fill" data-width="45%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+.skill-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #f08080, #ffa07a);
+  border-radius: 25px;
+  transition: width 1.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  animation: shimmer 4s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -30%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+</style>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".skill-fill").forEach(fill => {
+    const width = fill.getAttribute("data-width");
+    fill.style.width = width;
+  });
+});
+</script>
+
+
+<style>
+ .services-1 {
+  position: relative;
+  display: block;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  min-height: 220px;
+}
+
+.services-1:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 1;
+}
+
+.services-1 .desc {
+  transition: all 0.3s ease-in-out;
+}
+
+.services-1 .read-more {
+  display: none;
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 10px;
+}
+
+.services-1:hover .read-more {
+  display: block;
+}
+
+/* Optional styling for Read More label */
+.read-more-btn {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #F08080;
+  margin-top: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const skillFills = document.querySelectorAll(".skill-fill");
+    skillFills.forEach(skill => {
+      skill.style.width = skill.getAttribute("data-width");
+    });
+  });
+</script>
+
+    <section class="ftco-section ftco-project" id="projects-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">My Projects</h2>
+            <p>Some of the major projects that I have created</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="interior.html">
+              <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/ANAND4.jpg);">
+                <div class="overlay"></div>
+                <div class="text text-center p-4"><h3><a href="interior.html">Interior</a></h3></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="exterior.html">
+              <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/anandn7.jpg);">
+                <div class="overlay"></div>
+                <div class="text text-center p-4"><h3><a href="exterior.html">Exterior</a></h3></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="outdoor.html">
+              <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/ANAND5.jpg);">
+                <div class="overlay"></div>
+                <div class="text text-center p-4"><h3><a href="outdoor.html">Outdoor</a></h3></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .ftco-project {
+        background: #000;
+        padding: 80px 0;
+        color: #ffffff;
+      }
+      .project {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+      }
+      .project:hover {
+        transform: scale(1.05);
+      }
+      .project .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        transition: background 0.3s;
+      }
+      .project:hover .overlay {
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .project .text {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .project a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .project a:hover {
+        text-decoration: underline;
+      }
+      .light-mode #projects-section {
+        background-color: #ffffff !important;
+      }
+      .dark-mode #projects-section {
+        background-color: #000000 !important;
+      }
+    </style>
+
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container" id="cont">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <h2 class="mb-4">Contact Me</h2>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <!-- Address -->
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <span class="icon"><i class="icon-map-signs"></i></span>
+          <div class="desc">
+            <h3 class="mb-3">ADDRESS</h3>
+            <div class="read-more">Kattangal, Calicut, Kerala</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <span class="icon"><i class="icon-phone2"></i></span>
+          <div class="desc">
+            <h3 class="mb-3">PHONE</h3>
+            <div class="read-more">
+              <a href="tel://8156865775" class="contact-link">IND: +91 8156865775</a><br>
+              <a href="tel://0501410320" class="contact-link">UAE: +97 0501410320</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <span class="icon"><i class="icon-paper-plane"></i></span>
+          <div class="desc">
+            <h3 class="mb-3">EMAIL</h3>
+            <div class="read-more">
+              <a href="mailto:anand3hd@gmail.com" class="contact-link">anand3hd@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Website -->
+      <div class="col-md-3 text-center d-flex ftco-animate">
+        <div class="services-1">
+          <span class="icon"><i class="icon-globe"></i></span>
+          <div class="desc">
+            <h3 class="mb-3">WEBSITE</h3>
+            <div class="read-more">
+              <a href="https://www.ananddesigner.in" class="contact-link">www.ananddesigner.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+
+    <style>
+      .contact-section {
+        background: #ffffff; /* Light mode background */
+        padding: 60px 0;
+        color: #000000; /* Light mode text (black for readability) */
+      }
+      .box {
+        background: rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .box:hover {
+        background: rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+      }
+      .contact-info .icon {
+        font-size: 30px;
+        color: #ff6600; /* Orange icon */
+        background: rgba(0, 0, 0, 0.2);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      .box h3 {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000000; /* Light mode h3 text */
+      }
+      .box p,
+      .box a {
+        color: #000000 !important; /* Light mode p and a text */
+        text-decoration: none;
+      }
+      .box a:hover {
+        text-decoration: underline;
+      }
+
+      /* Dark Mode */
+      .dark-mode .contact-section {
+        background: #000000; /* Dark mode background */
+        color: #ffffff; /* Dark mode text */
+      }
+      .dark-mode .box {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark-mode .box:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.05);
+      }
+      .dark-mode .contact-info .icon {
+        color: #ff6347; /* Slightly different orange for dark mode */
+      }
+      .dark-mode .box h3 {
+        color: #ffffff !important; /* Dark mode h3 text */
+      }
+      .dark-mode .box p,
+      .dark-mode .box a {
+        color: #ffffff !important; /* Dark mode p and a text */
+      }
+
+      /* Ensure h2 is #F08080 in both modes */
+      .light-mode .contact-section h2,
+      .dark-mode .contact-section h2 {
+        color: #F08080 !important;
+      }
+    </style>
+
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <!-- Assuming other contact info precedes this, as per earlier context -->
+    <div id="cwm" class="py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="contact-form-wrapper p-5 shadow-lg rounded">
+            <h3 class="mb-4 text-center text-primary font-weight-bold">CONNECT WITH ME</h3>
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+              <input type="hidden" name="access_key" value="18140aab-7af1-4303-9f03-e8de59c3a58a">
+              <div class="form-group mb-4">
+                <input type="text" name="name" class="form-control form-control-lg" placeholder="Your name" required>
+              </div>
+              <div class="form-group mb-4">
+                <input type="email" name="email" class="form-control form-control-lg" placeholder="Your email" required>
+              </div>
+              <div class="form-group mb-4">
+                <input type="text" name="subject" class="form-control form-control-lg" placeholder="Subject" required>
+              </div>
+              <div class="form-group mb-4">
+                <textarea name="message" class="form-control form-control-lg" rows="5" placeholder="Write your message..." required></textarea>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+              </div>
+            </form>
+            <div id="successMessage" class="alert alert-success mt-3 text-center" style="display: none;">Your message has been sent!</div>
+            <div id="errorMessage" class="alert alert-danger mt-3 text-center" style="display: none;">Error sending message.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Contact Section Base Styles */
+  .contact-section {
+    background: #ffffff; /* Default light mode */
+    padding: 60px 0;
+    color: #000000; /* Default light mode text */
+  }
+  #cwm {
+    background: transparent; /* Inherits from parent */
+  }
+
+  /* Form Wrapper Styles */
+  .contact-form-wrapper {
+    background: #f8f9fa; /* Light gray default */
+    border-radius: 15px;
+    padding: 2.5rem; /* Reduced padding for better fit */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 100%; /* Ensures it fits within column */
+  }
+  .contact-form-wrapper h3 {
+    font-size: 1.75rem;
+    color: #007bff; /* Blue default */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .form-group {
+    margin-bottom: 1.5rem; /* Consistent spacing */
+  }
+  .form-control {
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    color: #000000;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+  .form-control::placeholder {
+    color: #6c757d;
+    opacity: 0.8;
+  }
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  .btn-primary {
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+  }
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+  .alert-success {
+    background: #d4edda;
+    color: #155724;
+    border-radius: 8px;
+  }
+  .alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+    border-radius: 8px;
+  }
+
+  /* Light Mode */
+  .light-mode .contact-section {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .light-mode .contact-form-wrapper {
+    background: #f8f9fa !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  .light-mode .contact-form-wrapper:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  .light-mode .contact-form-wrapper h3 {
+    color: #007bff;
+  }
+  .light-mode .form-control {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ced4da;
+  }
+  .light-mode .form-control::placeholder {
+    color: #6c757d;
+  }
+  .light-mode .services-1 {
+  transition: background-color 0.3s ease;
+}
+.light-mode .services-1:hover {
+  background-color: #f2f2f2; /* Light gray background on hover */
+  border-radius: 10px;
+  transform: scale(1.03);
+}
+  /* Dark Mode */
+  .dark-mode .contact-section {
+    background: #000000 !important;
+    color: #ffffff !important;
+  }
+  .dark-mode .contact-form-wrapper {
+    background: #1a1a1a !important;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.05);
+  }
+  .dark-mode .contact-form-wrapper:hover {
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.1);
+  }
+  .dark-mode .contact-form-wrapper h3 {
+    color: #66b0ff; /* Lighter blue for dark mode */
+  }
+  .dark-mode .form-control {
+    background: #333333;
+    color: #ffffff;
+    border-color: #555555;
+  }
+  .dark-mode .form-control::placeholder {
+    color: #aaaaaa;
+  }
+  .dark-mode .form-control:focus {
+    border-color: #66b0ff;
+    box-shadow: 0 0 5px rgba(102, 176, 255, 0.5);
+  }
+  .dark-mode .btn-primary {
+    background: #F08080;
+  }
+  .dark-mode .btn-primary:hover {
+    background: #F08080;
+  }
+  .dark-mode .alert-success {
+    background: #2d6b3f;
+    color: #d4edda;
+  }
+  .dark-mode .alert-danger {
+    background: #8b2e34;
+    color: #f8d7da;
+  }
+
+  /* Ensure h2 remains pink */
+  .light-mode .contact-section h2,
+  .dark-mode .contact-section h2 {
+    color: #F08080 !important;
+  }
+</style>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let formData = new FormData(this);
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        document.getElementById("successMessage").style.display = "block";
+        document.getElementById("errorMessage").style.display = "none";
+        this.reset();
+      } else {
+        document.getElementById("errorMessage").style.display = "block";
+      }
+    })
+    .catch(error => {
+      document.getElementById("errorMessage").style.display = "block";
+      console.error("Error:", error);
+    });
+  });
+</script>
+</div>
+</section>
+
+<footer class="ftco-footer ftco-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="ftco-footer-widget mb-4 text-center">
+          <h2 class="ftco-heading-2">Follow Me</h2>
+          <ul class="ftco-footer-social list-unstyled d-flex justify-content-center">
+            <li class="ftco-animate mx-3">
+              <a href="https://twitter.com/" target="_blank">
+                <span class="icon-twitter"></span>
+              </a>
+            </li>
+            <li class="ftco-animate mx-3">
+              <a href="https://facebook.com" target="_blank">
+                <span class="icon-facebook"></span>
+              </a>
+            </li>
+            <li class="ftco-animate mx-3">
+              <a href="https://www.instagram.com/?hl=en" target="_blank">
+                <span class="icon-instagram"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="ftco-footer-widget mb-4 text-center">
+          <h2 class="ftco-heading-2">Contact</h2>
+          <ul class="list-unstyled">
+            <li><span class="icon icon-map-marker"></span> Kattangal, Calicut, Kerala</li>
+            <li><a href="tel:+918156865775"><span class="icon icon-phone"></span> +91 8156865775</a></li>
+            <li><a href="mailto:anand3hd@gmail.com"><span class="icon icon-envelope"></span> anand3hd@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+  /* Footer Background */
+.ftco-footer {
+  background: var(--footer-bg, #111);
+  color: var(--footer-text, #fff);
+  padding: 4rem 0;
+}
+
+/* Headings */
+.ftco-footer-widget h2 {
+  font-size: 24px;
+  color: var(--primary, #F08080);
+  margin-bottom: 1rem;
+}
+
+/* Social Icons Hover */
+.ftco-footer-social li a {
+  font-size: 20px;
+  color: #ccc;
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.ftco-footer-social li a:hover {
+  color: var(--primary, #F08080);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--primary, #F08080);
+  transform: scale(1.2);
+}
+
+/* Contact Details Hover */
+.ftco-footer-widget ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.ftco-footer-widget ul li a {
+  color: #ccc;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.ftco-footer-widget ul li a:hover {
+  color: var(--primary, #F08080);
+}
+
+/* Light and Dark Theme Variables */
+body.white-theme {
+  --footer-bg: #f9f9f9;
+  --footer-text: #222;
+  --primary: #F08080;
+}
+
+body.dark-theme {
+  --footer-bg: #111;
+  --footer-text: #fff;
+  --primary: #F08080;
+}
+
+</style>
+
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+   // Fixed animation for skills section
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to animate skills when they come into view
+  function animateSkills() {
+    const skillsSection = document.getElementById('skills-section');
+    
+    // If skills section exists in the page
+    if (skillsSection) {
+      const skillFills = document.querySelectorAll('.skill-fill');
+      
+      // Set initial width to 0
+      skillFills.forEach(fill => {
+        fill.style.width = '0';
+      });
+      
+      // Create an intersection observer to trigger animations when elements are in view
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // When skills section is visible, animate all skill bars
+            skillFills.forEach(fill => {
+              const width = fill.getAttribute('data-width');
+              setTimeout(() => {
+                fill.style.width = width;
+              }, 200);
+            });
+          }
+        });
+      }, { threshold: 0.2 }); // Trigger when 20% of the section is visible
+      
+      // Start observing the skills section
+      observer.observe(skillsSection);
+    }
+  }
+  
+  // Call the function to set up the animation
+  animateSkills();
+  
+  // Listen for theme changes and re-trigger animations
+  document.addEventListener('themeChanged', function() {
+    // Reset skill widths to 0
+    const skillFills = document.querySelectorAll('.skill-fill');
+    skillFills.forEach(fill => {
+      fill.style.width = '0';
+    });
+    
+    // Re-trigger animations after a slight delay
+    setTimeout(() => {
+      const skillFills = document.querySelectorAll('.skill-fill');
+      skillFills.forEach(fill => {
+        const width = fill.getAttribute('data-width');
+        fill.style.width = width;
+      });
+    }, 300);
+  });
+});
+
+// Theme toggle functionality with fixed footer styling
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+  const toggleBtn = document.getElementById("toggleBtn");
+  const toggleIcon = document.getElementById("toggleIcon");
+  
+  // Apply saved theme
+  const savedMode = localStorage.getItem("mode") || "dark"; // Default to dark if not set
+  
+  if (savedMode === "light") {
+    body.classList.add("light-mode");
+    body.classList.remove("dark-mode");
+    toggleIcon.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
+  } else {
+    body.classList.add("dark-mode");
+    body.classList.remove("light-mode");
+    toggleIcon.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
+  }
+  
+  // Apply theme to all sections immediately
+  applyThemeToAllSections();
+  
+  // Handle theme toggle
+  toggleBtn.addEventListener("click", function () {
+    const isLightMode = body.classList.contains("light-mode");
+    if (isLightMode) {
+      body.classList.remove("light-mode");
+      body.classList.add("dark-mode");
+      toggleIcon.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
+      localStorage.setItem("mode", "dark");
+    } else {
+      body.classList.remove("dark-mode");
+      body.classList.add("light-mode");
+      toggleIcon.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
+      localStorage.setItem("mode", "light");
+    }
+    
+    toggleBtn.classList.add("ripple");
+    setTimeout(() => toggleBtn.classList.remove("ripple"), 600);
+    
+    // Dispatch a custom event that we can listen for elsewhere
+    const themeChangeEvent = new CustomEvent('themeChanged', { 
+      detail: { theme: isLightMode ? 'dark' : 'light' } 
+    });
+    document.dispatchEvent(themeChangeEvent);
+    
+    // Apply theme to all sections
+    applyThemeToAllSections();
+  });
+  
+  // Apply theme to all sections
+  function applyThemeToAllSections() {
+    const sections = document.querySelectorAll('section, footer, header, .ftco-footer');
+    const currentTheme = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
+    
+    sections.forEach(section => {
+      if (currentTheme === 'light-mode') {
+        section.classList.add('light-mode');
+        section.classList.remove('dark-mode');
+      } else {
+        section.classList.add('dark-mode');
+        section.classList.remove('light-mode');
+      }
+    });
+  }
+});
+
+    </script>
+    
+  </body>
+</html>
